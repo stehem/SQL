@@ -1,0 +1,21 @@
+TRUNCATE TABLE employees;
+ALTER SEQUENCE employees_id_seq RESTART WITH 1;
+INSERT INTO employees (department_id, boss_id, name, salary) VALUES (1, 2, 'qwerty', 100);
+INSERT INTO employees (department_id, boss_id, name, salary) VALUES (1, 2, 'poiuyt', 120);
+INSERT INTO employees (department_id, boss_id, name, salary) VALUES (1, 2, 'uytrew', 90);
+INSERT INTO employees (department_id, boss_id, name, salary) VALUES (1, 2, 'asdfgh', 105);
+INSERT INTO employees (department_id, boss_id, name, salary) VALUES (1, 2, 'ooouuu', 125);
+INSERT INTO employees (department_id, boss_id, name, salary) VALUES (2, 8, 'lkjhg', 115);
+INSERT INTO employees (department_id, boss_id, name, salary) VALUES (2, 8, 'ddfghj', 135);
+INSERT INTO employees (department_id, boss_id, name, salary) VALUES (2, 8, 'mbnmbn', 145);
+INSERT INTO employees (department_id, boss_id, name, salary) VALUES (3, 10, 'zxcvcb', 85);
+INSERT INTO employees (department_id, boss_id, name, salary) VALUES (3, 10, 'mnbvv', 140);
+INSERT INTO employees (department_id, boss_id, name, salary) VALUES (3, 8, 'zxcvasd', 120);
+INSERT INTO employees (department_id, boss_id, name, salary) VALUES (4, 12, 'sssfff', 120);
+
+TRUNCATE TABLE departments;
+ALTER SEQUENCE departments_id_seq RESTART WITH 1;
+INSERT INTO departments (name) VALUES ('IT');
+INSERT INTO departments (name) VALUES ('HR');
+INSERT INTO departments (name) VALUES ('sales');
+INSERT INTO departments (name) VALUES ('marketing');
